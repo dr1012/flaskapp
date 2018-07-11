@@ -49,7 +49,7 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-
+'''
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     print('WOOP WOOP')
@@ -78,7 +78,7 @@ def upload_file():
             flash('not an allowed file format')
             return redirect(url_for('upload_file'))
 
-
+'''
 
 
 '''
