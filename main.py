@@ -1,15 +1,7 @@
 from flask import render_template, Flask, flash, redirect, request, url_for, send_from_directory
 from config import Config
 from forms import LoginForm, UploadFileForm
-from werkzeug.utils import secure_filename
-import os
-from pdf_extractor import extract
-from frequency_distribution import frequency_dist
-from mywordcloud import build_word_cloud
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import urllib.parse
+
 
 app = Flask(__name__)
 
